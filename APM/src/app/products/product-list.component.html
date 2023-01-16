@@ -30,6 +30,8 @@
             <th>Price</th>
             <th>5 Star Rating Col</th>
           </tr>
+        </thead>
+        <tbody>
           <tr *ngFor="let product of products">
             <td>
               <img *ngIf='showImage' [src]='product.imageUrl' [title]='product.productName' [style.width.px]='imageWidth'
@@ -41,9 +43,6 @@
             <td>{{ product.price | currency | lowercase}}</td>
             <td>{{ product.starRating }}</td>
           </tr>
-        </thead>
-        <tbody>
-
         </tbody>
       </table>
     </div>
