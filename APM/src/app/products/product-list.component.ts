@@ -71,6 +71,6 @@ export class ProductListComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    console.log('log form OnInit');
+    console.log('In OnInit');
   }
 }
